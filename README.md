@@ -15,6 +15,7 @@ in Windows 10.
 ## Installation
 
 ```bash
+cd ~ && curl -sL https://github.com/vronjec/dotfiles/archive/master.tar.gz | tar xz --strip 1
 ```
 
 ## License
