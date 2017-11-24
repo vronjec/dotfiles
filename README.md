@@ -12,7 +12,7 @@ in Windows 10.
 
 *   [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/about)
 
-## Usage
+## Installation
 
 ### Install public dotfiles repository
 
