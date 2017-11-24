@@ -14,10 +14,31 @@ in Windows 10.
 
 ## Usage
 
+### Install public dotfiles repository
+
 ```bash
-# Install public dotfiles repository
 cd ~ && curl -sL https://github.com/vronjec/dotfiles/archive/master.tar.gz | tar xz --strip 1
 ```
+
+### Install private keyfiles repository
+
+1. Provide GitHub personal access token for private repository access:
+
+    ```bash
+    GITHUB_TOKEN=<github-personal-access-token>
+    ```
+
+2. Install SSH configuration and keys from private repository:
+
+    ```bash
+    cd ~ && curl -sL https://github.com/vronjec/keyfiles/archive/master.tar.gz -u ${GITHUB_TOKEN}:x-oauth-basic | tar xz --strip 1
+    chmod 700 ~/.ssh
+    chmod 600 ~/.ssh/config
+    touch ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys
+    touch ~/.ssh/known_hosts && chmod 600 ~/.ssh/known_hosts
+    chmod 600 ~/.ssh/id_*
+    chmod 600 ~/.ssh/id_*.pub
+    ```
 
 ## Etymology
 
