@@ -18,6 +18,16 @@ in Windows 10.
 cd ~ && curl -sL https://github.com/vronjec/dotfiles/archive/master.tar.gz | tar xz --strip 1
 ```
 
+## Etymology
+
+Dotfiles are plain text configuration files on Unix-like systems for
+shell, editor, and other software customizations. They are called
+"dotfiles" as they typically are named with a leading `.`, making
+them hidden on Unix-like systems by default. In general, dotfiles
+end up being extremely specific to an individual developers workflows
+and preferences. (Summary based on thoughtbot article
+"[Intro to Dotfiles](https://thoughtbot.com/upcase/videos/intro-to-dotfiles)")
+
 ## License
 
 Source files are released under the terms of the license specified in
