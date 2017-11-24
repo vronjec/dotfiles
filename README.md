@@ -12,9 +12,10 @@ in Windows 10.
 
 *   [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/about)
 
-## Installation
+## Usage
 
 ```bash
+# Install public dotfiles repository
 cd ~ && curl -sL https://github.com/vronjec/dotfiles/archive/master.tar.gz | tar xz --strip 1
 ```
 
