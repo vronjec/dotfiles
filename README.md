@@ -1,4 +1,4 @@
-# Viktor's dotfiles
+# Viktor’s dotfiles
 
 ## Introduction
 
