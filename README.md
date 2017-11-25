@@ -47,8 +47,8 @@ shell, editor, and other software customizations. They are called
 "dotfiles" as they typically are named with a leading `.`, making
 them hidden on Unix-like systems by default. In general, dotfiles
 end up being extremely specific to an individual developers workflows
-and preferences. (Summary based on thoughtbot article
-"[Intro to Dotfiles](https://thoughtbot.com/upcase/videos/intro-to-dotfiles)")
+and preferences. (Summary based on [thoughtbot](https://thoughtbot.com/)
+article "[Intro to Dotfiles](https://thoughtbot.com/upcase/videos/intro-to-dotfiles)")
 
 ## License
 
