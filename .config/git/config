@@ -1,3 +1,15 @@
+[alias]
+    a  = add --all
+    b  = branch
+    c  = commit
+    co = checkout
+    d  = diff
+    i  = init
+    l  = log --abbrev=commit --pretty=format:"%Cred%h%Creset%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset %Cgreen(%cr)" --graph
+    m  = !git add --all && git commit -m
+    p  = push
+    s  = status
+
 [user]
     name = Viktor Ronjec
     email = viktor@ronjec.io
