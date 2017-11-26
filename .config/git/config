@@ -10,6 +10,9 @@
     p  = push
     s  = status
 
+[merge]
+    ff = false
+
 [push]
     default = current
     followTags = true
