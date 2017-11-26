@@ -10,6 +10,9 @@
     p  = push
     s  = status
 
+[diff]
+    renames = copies
+
 [merge]
     ff = false
 
