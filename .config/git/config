@@ -10,6 +10,9 @@
     p  = push
     s  = status
 
+[push]
+    default = current
+
 [user]
     name = Viktor Ronjec
     email = viktor@ronjec.io
