@@ -12,6 +12,7 @@
 
 [push]
     default = current
+    followTags = true
 
 [user]
     name = Viktor Ronjec
