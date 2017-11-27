@@ -33,3 +33,5 @@
 [user]
     name = Viktor Ronjec
     email = viktor@ronjec.io
+    useConfigOnly = true
+
