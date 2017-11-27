@@ -19,6 +19,8 @@
 
 [merge]
     ff = false
+    tool = vimdiff
+    conflictstyle = diff3
 
 [pull]
     rebase = preserve
