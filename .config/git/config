@@ -27,6 +27,9 @@
     default = current
     followTags = true
 
+[status]
+    showStash = true
+
 [user]
     name = Viktor Ronjec
     email = viktor@ronjec.io
