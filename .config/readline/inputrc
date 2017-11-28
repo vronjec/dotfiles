@@ -1,0 +1,2 @@
+# Disable annoying terminal bell in WSL
+set bell-style none
