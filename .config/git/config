@@ -17,6 +17,9 @@
     renames = copies
     submodule = diff
 
+[fetch]
+	recurseSubmodules = on-demand
+
 [merge]
     ff = false
     tool = vimdiff
@@ -28,6 +31,7 @@
 [push]
     default = current
     followTags = true
+    recurseSubmodules = check
 
 [status]
     showStash = true
