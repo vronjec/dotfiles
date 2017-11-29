@@ -10,6 +10,9 @@
     p  = push
     s  = status
 
+[color]
+	ui = auto
+
 [core]
     autocrlf = input
 
