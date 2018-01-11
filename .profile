@@ -17,6 +17,7 @@ export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
 
 # Windows Subsystem for Linux
 if grep -q Microsoft /proc/version; then
-    # Connect Docker client to daemon on Windows host instead of default Unix socket
-    export DOCKER_HOST=tcp://127.0.0.1:2375
+    # Use Windows version of selected applications
+    alias docker="docker.exe"
+    alias git="git.exe"
 fi
