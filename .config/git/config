@@ -11,7 +11,7 @@
     s  = status
 
 [color]
-	ui = auto
+    ui = auto
 
 [core]
     autocrlf = input
@@ -22,7 +22,7 @@
     submodule = log
 
 [fetch]
-	recurseSubmodules = on-demand
+    recurseSubmodules = on-demand
 
 [merge]
     ff = false
