@@ -2,6 +2,8 @@
     a  = add --all
     ac = !git add --all && git commit -m
     b  = branch
+    bd = branch -d
+    bm = branch --merged
     c  = commit -m
     ca = commit --amend
     co = checkout
@@ -11,6 +13,7 @@
     m  = merge
     p  = pull
     pp = !git pull && git push
+    r  = rebase
     s  = status
 
 [color]
