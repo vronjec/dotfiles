@@ -32,6 +32,7 @@
 
 [merge]
     ff = false
+    log = 1000
     tool = vimdiff
     conflictstyle = diff3
 
