@@ -15,7 +15,7 @@
 
 [core]
     autocrlf = input
-    excludesFile = $XDG_CONFIG_HOME/git/ignore
+    excludesFile = ~/.config/git/ignore
 
 [diff]
     renames = copies
