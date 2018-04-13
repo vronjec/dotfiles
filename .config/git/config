@@ -7,7 +7,8 @@
     i  = init
     l  = log --abbrev=commit --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset %Cgreen(%cr)' --graph
     m  = !git add --all && git commit -m
-    p  = push
+    p  = pull
+    pp = !git pull && git push
     s  = status
 
 [color]
