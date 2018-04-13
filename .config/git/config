@@ -1,12 +1,14 @@
 [alias]
     a  = add --all
+    ac = !git add --all && git commit -m
     b  = branch
-    c  = commit
+    c  = commit -m
+    ca = commit --amend
     co = checkout
     d  = diff
     i  = init
     l  = log --abbrev=commit --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset %Cgreen(%cr)' --graph
-    m  = !git add --all && git commit -m
+    m  = merge
     p  = pull
     pp = !git pull && git push
     s  = status
