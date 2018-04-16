@@ -32,6 +32,9 @@ Temporary Items
 .Trash-*
 .nfs*
 
+# Sass
+.sass-cache/
+
 # JetBrains
 .idea/
 
