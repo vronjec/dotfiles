@@ -32,11 +32,22 @@ Temporary Items
 .Trash-*
 .nfs*
 
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+
 # Sass
 .sass-cache/
+
+# Composer
+/vendor
 
 # JetBrains
 .idea/
 
 # Visual Studio Code
 .vscode/
+
+# Vagrant
+/.vagrant
