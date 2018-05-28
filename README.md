@@ -4,9 +4,9 @@
 
 A collection of more or less
 [XDG-compliant](http://standards.freedesktop.org/basedir-spec/latest/)
-configuration files for Ubuntu and
+configuration files for
 [Windows Subsystem for Linux (WSL)](https://msdn.microsoft.com/en-us/commandline/wsl/about)
-in Windows 10.
+environments on Windows 10.
 
 ## Requirements
 
