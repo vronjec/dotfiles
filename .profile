@@ -21,3 +21,10 @@ if grep -q Microsoft /proc/version; then
     alias docker="docker.exe"
     alias git="git.exe"
 fi
+
+# Include private bin directory in PATH
+if [ -d "$HOME/.local/bin" ]; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
+export PATH
