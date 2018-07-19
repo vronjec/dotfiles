@@ -4,13 +4,9 @@
 
 A collection of more or less
 [XDG-compliant](http://standards.freedesktop.org/basedir-spec/latest/)
-configuration files for
+configuration files for GNU/Linux distributions and
 [Windows Subsystem for Linux (WSL)](https://msdn.microsoft.com/en-us/commandline/wsl/about)
 environments on Windows 10.
-
-## Requirements
-
-*   [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/about)
 
 ## Installation
 
