@@ -7,6 +7,10 @@
 #        | |
 #        |_|
 
+#
+# XDG
+#
+
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
@@ -15,7 +19,10 @@ alias tmux='tmux -f "$XDG_CONFIG_HOME"/tmux/tmux.conf'
 export INPUTRC="$XDG_CONFIG_HOME/readline/inputrc"
 export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
 
+#
 # Alias
+#
+
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -23,7 +30,10 @@ alias l='ls -CF'
 alias d='docker'
 alias g='git'
 
+#
 # Color
+#
+
 case "$TERM" in
     xterm-color|*-256color)
         alias ls='ls --color=auto'
@@ -36,12 +46,23 @@ case "$TERM" in
         ;;
 esac
 
+#
+# Prompt
+#
+
+#
 # Windows Subsystem for Linux
+#
+
 if grep -q Microsoft /proc/version; then
     # Use Windows version of selected applications
     alias docker="docker.exe"
     alias git="git.exe"
 fi
+
+#
+# Path
+#
 
 # Include private bin directory in PATH
 if [ -d "$HOME/.local/bin" ]; then
@@ -50,7 +71,10 @@ fi
 
 export PATH
 
+#
 # Bash
+#
+
 if [ "$BASH" ]; then
     # check window size after each command
     shopt -s checkwinsize
@@ -64,6 +88,10 @@ if [ "$BASH" ]; then
     HISTSIZE=1000
     HISTFILESIZE=2000
 fi
+
+#
+# Other
+#
 
 # Display old-school greeting
 if [ -x "$(command -v cowsay)" ] && [ -x "$(command -v fortune)" ]; then
