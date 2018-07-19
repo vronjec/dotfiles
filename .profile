@@ -28,3 +28,8 @@ if [ -d "$HOME/.local/bin" ]; then
 fi
 
 export PATH
+
+# Display old-school greeting
+if [ -x "$(command -v cowsay)" ] && [ -x "$(command -v fortune)" ]; then
+    fortune | cowsay
+fi
