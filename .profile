@@ -29,6 +29,21 @@ fi
 
 export PATH
 
+# Bash
+if [ "$BASH" ]; then
+    # check window size after each command
+    shopt -s checkwinsize
+
+    # append to history file instead of overwrite
+    shopt -s histappend
+
+    # ignore duplicate lines or lines starting with space in history
+    HISTCONTROL=ignoreboth
+
+    HISTSIZE=1000
+    HISTFILESIZE=2000
+fi
+
 # Display old-school greeting
 if [ -x "$(command -v cowsay)" ] && [ -x "$(command -v fortune)" ]; then
     fortune | cowsay
