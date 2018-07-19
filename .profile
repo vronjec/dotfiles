@@ -20,6 +20,17 @@ export INPUTRC="$XDG_CONFIG_HOME/readline/inputrc"
 export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
 
 #
+# Path
+#
+
+# Include private bin directory in PATH
+if [ -d "$HOME/.local/bin" ]; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
+export PATH
+
+#
 # Alias
 #
 
@@ -51,27 +62,6 @@ esac
 #
 
 #
-# Windows Subsystem for Linux
-#
-
-if grep -q Microsoft /proc/version; then
-    # Use Windows version of selected applications
-    alias docker="docker.exe"
-    alias git="git.exe"
-fi
-
-#
-# Path
-#
-
-# Include private bin directory in PATH
-if [ -d "$HOME/.local/bin" ]; then
-    PATH="$HOME/.local/bin:$PATH"
-fi
-
-export PATH
-
-#
 # Bash
 #
 
@@ -87,6 +77,16 @@ if [ "$BASH" ]; then
 
     HISTSIZE=1000
     HISTFILESIZE=2000
+fi
+
+#
+# Windows Subsystem for Linux
+#
+
+if grep -q Microsoft /proc/version; then
+    # Use Windows version of selected applications
+    alias docker="docker.exe"
+    alias git="git.exe"
 fi
 
 #
