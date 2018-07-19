@@ -15,6 +15,27 @@ alias tmux='tmux -f "$XDG_CONFIG_HOME"/tmux/tmux.conf'
 export INPUTRC="$XDG_CONFIG_HOME/readline/inputrc"
 export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
 
+# Alias
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+alias d='docker'
+alias g='git'
+
+# Color
+case "$TERM" in
+    xterm-color|*-256color)
+        alias ls='ls --color=auto'
+        alias grep='grep --color=auto'
+        alias fgrep='fgrep --color=auto'
+        alias egrep='egrep --color=auto'
+
+        # Color GCC warnings and errors
+        export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+        ;;
+esac
+
 # Windows Subsystem for Linux
 if grep -q Microsoft /proc/version; then
     # Use Windows version of selected applications
