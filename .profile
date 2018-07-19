@@ -95,5 +95,12 @@ fi
 
 # Display old-school greeting
 if [ -x "$(command -v cowsay)" ] && [ -x "$(command -v fortune)" ]; then
-    fortune | cowsay
+    if [ -x "$(command -v lolcat)" ]; then
+        fortune | cowsay | lolcat
+    else
+        fortune | cowsay
+    fi
+
+    # Separate greeting from prompt with a newline
+    echo
 fi
