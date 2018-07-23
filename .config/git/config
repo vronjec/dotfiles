@@ -1,6 +1,5 @@
 [alias]
-    a  = add
-    aa = add --all
+    a  = add --all
     ac = !git add --all && git commit -m
     b  = branch
     bd = branch -d
