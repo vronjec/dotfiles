@@ -4,10 +4,14 @@
     b  = branch
     bd = branch -d
     bm = branch --merged
-    c  = commit -m
+    c  = commit
     ca = commit --amend
+    cm = commit -m
     co = checkout
     d  = diff
+    ds = diff --stat
+    dt = difftool
+    f  = fetch
     i  = init
     l  = log --abbrev=commit --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset %Cgreen(%cr)' --graph
     m  = merge
