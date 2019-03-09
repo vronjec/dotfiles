@@ -4,9 +4,8 @@
     b  = branch
     bd = branch -d
     bm = branch --merged
-    c  = commit
+    c  = commit -m
     ca = commit --amend
-    cm = commit -m
     co = checkout
     d  = diff
     ds = diff --stat
