@@ -33,19 +33,8 @@
 [fetch]
     recurseSubmodules = on-demand
 
-[merge]
-    ff = false
-    log = 1000
-    tool = vimdiff
-    conflictstyle = diff3
-
-[pull]
-    rebase = preserve
-
 [push]
     default = current
-    followTags = true
-    recurseSubmodules = check
 
 [status]
     showStash = true
@@ -53,4 +42,3 @@
 [user]
     name = Viktor Ronjec
     useConfigOnly = true
-
