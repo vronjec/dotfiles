@@ -13,7 +13,7 @@ environments on Windows.
 ### Install public dotfiles repository
 
 ```bash
-cd ~ && curl -sL https://github.com/vronjec/dotfiles/archive/master.tar.gz | tar xz --strip 1
+cd ~ && curl --silent -L https://api.github.com/repos/vronjec/dotfiles/tarball | tar xz --strip 1
 ```
 
 ### Install private keyfiles repository
@@ -27,7 +27,7 @@ cd ~ && curl -sL https://github.com/vronjec/dotfiles/archive/master.tar.gz | tar
 2. Install SSH configuration and keys from private repository:
 
     ```bash
-    cd ~ && curl -sL https://github.com/vronjec/keyfiles/archive/master.tar.gz -u ${GITHUB_TOKEN}:x-oauth-basic | tar xz --strip 1
+    cd ~ && curl --silent -H "Authorization: token ${GITHUB_TOKEN}" -L https://api.github.com/repos/vronjec/keyfiles/tarball | tar xz --strip 1
     chmod 700 ~/.ssh
     chmod 600 ~/.ssh/config
     touch ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys
