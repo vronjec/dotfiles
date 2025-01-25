@@ -33,6 +33,9 @@
 [fetch]
     recurseSubmodules = on-demand
 
+[init]
+    defaultBranch = main
+
 [push]
     default = current
 
