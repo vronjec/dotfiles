@@ -24,6 +24,7 @@
 
 [core]
     autocrlf = input
+    editor = vim
     excludesFile = ~/.config/git/ignore
 
 [diff]
