@@ -6,7 +6,7 @@ A collection of more or less
 [XDG-compliant](http://standards.freedesktop.org/basedir-spec/latest/)
 configuration files for GNU/Linux distributions and
 [Windows Subsystem for Linux (WSL)](https://msdn.microsoft.com/en-us/commandline/wsl/about)
-environments on Windows 10.
+environments on Windows.
 
 ## Installation
 
@@ -35,16 +35,6 @@ cd ~ && curl -sL https://github.com/vronjec/dotfiles/archive/master.tar.gz | tar
     chmod 600 ~/.ssh/id_*
     chmod 600 ~/.ssh/id_*.pub
     ```
-
-## Etymology
-
-Dotfiles are plain text configuration files on Unix-like systems for
-shell, editor, and other software customizations. They are called
-"dotfiles" as they typically are named with a leading `.`, making
-them hidden on Unix-like systems by default. In general, dotfiles
-end up being extremely specific to an individual developers workflows
-and preferences. (Summary based on [thoughtbot](https://thoughtbot.com/)
-article "[Intro to Dotfiles](https://thoughtbot.com/upcase/videos/intro-to-dotfiles)")
 
 ## License
 
