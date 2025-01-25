@@ -40,6 +40,7 @@ alias l='ls -CF'
 
 alias d='docker'
 alias g='git'
+alias n='npm'
 
 #
 # Color
